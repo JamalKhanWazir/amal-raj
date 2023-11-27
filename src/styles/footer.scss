@@ -1,0 +1,153 @@
+.footer {
+  @include flexColumn;
+  align-items: center;
+  height: 70vh;
+  width: 100%;
+  background-color: $footer;
+  padding: 5rem 10rem;
+  gap: 2rem;
+
+  .footer-div {
+    // color: wheat;
+    @include flexRowCenter;
+    gap: 6rem;
+    justify-content: start;
+
+    > .self-details,
+    .information,
+    .useful-links,
+    .subscribe-us {
+      width: 100%;
+      height: 100%;
+      @include flexColumn;
+      justify-content: start;
+      align-items: start;
+      gap: 1.5rem;
+    }
+
+    > .self-details {
+      align-items: flex-start;
+      //   height: 70%;
+
+      > div {
+        > h2 {
+          color: $footer-color;
+        }
+        > .footer-about {
+          color: $footer-color;
+        }
+        > p {
+          font-size: 13px;
+          color: $footer-color-2;
+        }
+
+        > .little-big-para {
+          width: 90%;
+        }
+      }
+
+      > .contact {
+        > h3 {
+          color: $footer-color;
+        }
+        > .phone-email > p {
+          font-size: 13px;
+          color: $footer-color-2;
+        }
+      }
+    }
+
+    > .information,
+    .useful-links {
+      > h3 {
+        color: $footer-color;
+      }
+
+      > .footer-links {
+        @include flexColumnCenter;
+        align-items: start;
+        gap: 5px;
+
+        > a > p {
+          color: $footer-color-2;
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+
+    > .subscribe-us {
+      text-align: end;
+      > p {
+        color: $footer-color-2;
+      }
+      > .footer-form {
+        @include flexColumn;
+        gap: 1rem;
+        > .footer-input {
+          padding: 10px;
+          width: 15rem;
+          border-radius: 5px;
+          font-size: 15px;
+        }
+        > .footer-submit-btn {
+          background-color: $footer-color;
+          padding: 10px 10px;
+          width: 60%;
+          border-radius: 5px;
+        }
+      }
+    }
+
+  }
+
+  .breakline-footer {
+    height: 3px;
+    width: 100%;
+    background-color: $footer-color;
+  }
+
+  > .social-media-links {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 18rem;
+
+    > div {
+      display: flex;
+      gap: 1.5rem;
+      > a > div {
+        // text-align: center;
+        @include flexRowCenter;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background-color: $footer-color;
+        transition: all 0.3;
+
+        > .linkedIn {
+          font-size: 30px;
+          color: $site-main-color;
+        }
+
+        > .twitter {
+          font-size: 25px;
+          color: $site-main-color;
+        }
+        > .insta {
+          font-size: 30px;
+          color: $site-main-color;
+        }
+
+        &:hover {
+          transform: scale(1.03);
+        }
+      }
+    }
+    > p {
+      color: $footer-color-2;
+    }
+  }
+}

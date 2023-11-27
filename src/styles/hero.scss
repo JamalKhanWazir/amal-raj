@@ -3,70 +3,117 @@
   height: 100vh;
   background-color: $site-main-color;
   @include flexRowCenter;
+  overflow: hidden;
 
   > main {
-    position: absolute;
+    height: 80%;
+    position: relative;
     @include flexColumnCenter;
-    gap: 50px;
+    gap: 3rem;
     top: 4rem;
+    // overflow: hidden;
 
     > .hero-text {
       @include flexColumnCenter;
-      > h1 {
-        font: 700 70px "Roboto Slab";
-        // color: $site-main-color;
+      > .heading {
+        display: flex;
+        // overflow: hidden;
+
+        > h1 {
+          font: 700 65px $timesRomanBold;
+          color: $main-color-dem;
+          position: relative;
+          overflow: hidden;
+          color: $main-color-dem;
+          animation: aboutHeading 1s ease-in-out normal;
+        }
+
       }
 
-      > p {
+      > .paraFirst,
+      .paraSecond {
         text-align: center;
-        font: 200 13px $main-font;
-        width: 54%;
+        font: 100 13px $timesRomanSimple;
+        width: 100%;
+        animation: heroPagePara 4s ease-in-out normal;
+      }
+      > .paraSecond {
+        animation: heroPagePara 4.2s ease-in-out normal;
       }
     }
 
     > img {
-      // height: 30%;
-      width: 25%;
+      width: 56%;
+      animation: heroImage 1.5s ease-in-out normal;
     }
   }
 
   .hero-btns {
-    width: 40%;
+    width: 50%;
     position: absolute;
     display: flex;
-    justify-content: space-between;
-    > a > .work-btns {
-      padding: 15px 35px;
-      border-radius: 10px;
-      border: solid 3px rgb(49, 155, 255);
-      color: rgb(49, 155, 255);
-      background-color: $site-main-color;
-      //   color: red;
+    justify-content: space-around;
+
+    > a > .work-btns-1,
+    .work-btns-2 {
+      width: 8.5rem;
+      padding: 15px 20px;
+      border-radius: 20px;
+      border: none;
+      color: $site-main-color;
+      background-color: $hero-btns;
+      transition: all 0.3s;
+      letter-spacing: 0.7px;
+      font: 900 13px "Rajdhani";
+      cursor: pointer;
+      animation: workButtons 3s ease-in-out normal;
+
+      &:hover {
+        background-color: $site-main-color;
+        color: $hero-btns;
+      }
     }
   }
 
   .stats {
     @include flexRowCenter;
-    gap: 10px;
+    gap: 3px;
     position: absolute;
-    bottom: 1rem;
+    bottom: 0.25rem;
+    overflow: hidden;
 
-    > div {
+    > .stats-div-1,
+    .stats-div-2,
+    .stats-div-3 {
       padding: 15px;
       border-radius: 10px;
       text-align: center;
-      background-color: rgba(0, 0, 0, 0.2);
+      background: linear-gradient(rgba(60, 60, 60, 0.1), rgba(0, 0, 0, 0.5));
+      animation: twoPara 3s ease-in-out normal;
+
+      &:hover {
+        background: linear-gradient(rgba(60, 60, 60, 0.4), rgba(0, 0, 0, 0.9));
+      }
 
       > h3,
       span {
         color: $white;
         font-size: 30px;
+        font-family: $main-font, sans-serif;
       }
 
       > p {
         color: $white;
-
+        font-family: "Roboto Slab", sans-serif;
       }
+    }
+
+    .stats-div-2 {
+      animation: twoPara 3.4s ease-in-out normal;
+    }
+
+    .stats-div-3 {
+      animation: twoPara 3.8s ease-in-out normal;
     }
   }
 
@@ -77,12 +124,16 @@
     position: absolute;
     background: no-repeat center/auto url("../assets/Background.png");
     background-size: cover;
-    // animation: imgUp 0.7s linear infinite alternate;
+    // animation: backgroundImage 1s;
   }
 }
 
-// @keyframes imgUp {
-//   to {
-//     transform: translateY(10px);
+// @keyframes backgroundImage {
+//   0% {
+//     scale: 1;
+//   }
+
+//   100% {
+//     scale: 1.1;
 //   }
 // }

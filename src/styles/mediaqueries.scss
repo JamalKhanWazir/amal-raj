@@ -1,0 +1,716 @@
+@media screen and (max-width: 1496px) {
+  .hero > main {
+    gap: 1rem;
+  }
+
+  .footer {
+    height: 80vh;
+  }
+}
+
+@media screen and (max-width: 1401px) {
+  .services > .services-cards {
+    width: 92%;
+  }
+
+  .threeDAnimations .heroSec > .text-container {
+    width: 53%;
+    left: 22rem;
+
+    .description-text {
+      font-size: 23px;
+    }
+  }
+}
+
+@media screen and (max-width: 1351px) {
+  .threeDAnimations .heroSec {
+    > .text-container {
+      width: 53%;
+
+      .description-text {
+        font-size: 22px;
+      }
+    }
+
+    > a > svg {
+      left: 47rem;
+    }
+  }
+
+  .threeDRenders > a > svg {
+    left: 47rem;
+  }
+}
+
+@media screen and (max-width: 1301px) {
+  .threeDAnimations .heroSec {
+    > .text-container {
+      width: 55%;
+      left: 20rem;
+
+      .description-text {
+        font-size: 22px;
+      }
+    }
+
+    > a > svg {
+      left: 45rem;
+    }
+  }
+  .threeDRenders > a > svg {
+    left: 45rem;
+  }
+}
+
+@media screen and (max-width: 1251px) {
+  .threeDAnimations .heroSec {
+    > .text-container {
+      width: 50%;
+      left: 20rem;
+
+      .description-text {
+        font-size: 18px;
+      }
+    }
+
+    > a > svg {
+      left: 43rem;
+      font-size: 3.5rem;
+    }
+  }
+
+  .threeDRenders > a > svg {
+    left: 43rem;
+    font-size: 3.5rem;
+  }
+}
+
+@media screen and (max-width: 1201px) {
+  .about {
+    padding: 5rem;
+  }
+
+  .contact-section-page {
+    .contact-us {
+      padding: 5rem;
+    }
+  }
+
+  .threeDAnimations .heroSec > a > svg {
+    left: 40rem;
+  }
+
+  .threeDRenders > a > svg {
+    left: 40rem;
+  }
+
+  .footer {
+    padding-left: 5rem;
+    padding-right: 5rem;
+
+    > .social-media-links {
+      gap: 12rem;
+    }
+  }
+}
+
+@media screen and (max-width: 1151px) {
+  .threeDAnimations .heroSec {
+    > .text-container {
+      width: 53%;
+      left: 18rem;
+    }
+
+    > a > svg {
+      left: 38rem;
+    }
+  }
+
+  .threeDRenders > a > svg {
+    left: 38rem;
+  }
+}
+
+@media screen and (max-width: 1101px) {
+  .services > .services-cards {
+    width: 100%;
+
+    > .card {
+      padding-left: 1.5rem;
+      padding-right: 1.5rem;
+    }
+  }
+}
+
+@media screen and (max-width: 1001px) {
+  .about > img {
+    height: 75%;
+  }
+
+  .contact-section-page {
+    .contact-us > form {
+      padding: 0;
+    }
+  }
+
+  .threeDAnimations {
+    .heroSec {
+      > .text-container {
+        width: 60%;
+        left: 13rem;
+      }
+
+      > a > svg {
+        left: 33rem;
+      }
+    }
+
+    .wrapper {
+      gap: 3rem;
+      padding-top: 1.75rem;
+
+      .video-container {
+        width: 45%;
+
+        .videoElement.big-video {
+          height: 255px;
+        }
+      }
+    }
+  }
+
+  .threeDRenders {
+    > a > svg {
+      left: 34rem;
+    }
+  }
+
+  .footer {
+    .footer-div {
+      gap: 2rem;
+      > .up-arrow-btn > div {
+        width: 30px;
+        height: 30px;
+        > svg {
+          font-size: 30px;
+        }
+      }
+    }
+    > .social-media-links {
+      justify-content: space-between;
+    }
+  }
+}
+
+@media screen and (max-width: 821px) {
+  .navbar {
+    padding-bottom: 20px;
+  }
+
+  .hero {
+    > main {
+      gap: 1rem;
+      top: 5rem;
+      > .hero-text {
+        > .heading {
+          > h1 {
+            font-size: 50px;
+          }
+        }
+        > p {
+          font-size: 11px;
+        }
+      }
+    }
+
+    .hero-btns {
+      width: 60%;
+      justify-content: space-between;
+    }
+  }
+
+  .threeDAnimations {
+    .heroSec {
+      margin-bottom: 5rem;
+
+      > .text-container {
+        left: 9rem;
+        width: 65%;
+        text-align: center;
+
+        .description-text {
+          font-size: 15px;
+        }
+      }
+
+      > a > svg {
+        left: 28rem;
+        font-size: 3rem;
+      }
+    }
+    .wrapper {
+      gap: 2rem;
+
+      .video-container {
+        width: 45%;
+
+        .videoElement.big-video {
+          height: 210px;
+        }
+      }
+    }
+  }
+
+  .threeDRenders {
+    > .grid-wrapper {
+      grid-template-rows: repeat(2, 20rem 30rem);
+    }
+    > a > svg {
+      left: 28rem;
+    }
+  }
+
+  .services {
+    padding: 4rem 2rem;
+
+    .services-heading-description {
+      > h1 {
+        font-size: 35px;
+      }
+
+      > p {
+        font-size: 12px;
+        width: 70%;
+      }
+    }
+
+    > .services-cards {
+      width: 90%;
+
+      > .card {
+        padding: 2rem;
+
+        > h2 {
+          font-size: 15px;
+        }
+        > p {
+          font-size: 10px;
+        }
+      }
+    }
+  }
+
+  .about {
+    height: unset;
+    flex-direction: column;
+    gap: 5rem;
+    padding: 5rem 8rem;
+
+    > div {
+      > h1 {
+        font-size: 35px;
+      }
+      > .para {
+        p {
+          width: 100%;
+        }
+      }
+    }
+
+    > img {
+      height: 70%;
+    }
+  }
+
+  .contact-section-page {
+    .contact-us {
+      height: unset;
+      flex-direction: column;
+      padding: 0 6rem;
+      gap: 1rem;
+
+      .heading-description {
+        padding-top: 5rem;
+        width: 100%;
+        gap: 1.5rem;
+
+        > h1 {
+          font-size: 35px;
+        }
+        > p {
+          color: $site-main-color;
+          width: 85%;
+          line-height: normal;
+          letter-spacing: normal;
+        }
+      }
+
+      > form {
+        width: 100%;
+        padding: 1rem;
+        gap: 0.5rem;
+      }
+    }
+  }
+
+  .footer {
+    height: 85vh;
+    padding: 5rem 1.75rem;
+
+    .footer-div {
+      gap: 1.5rem;
+    }
+  }
+}
+
+
+// Phones Breakpoint --- IPhone 14 pro-max
+@media screen and (max-width: 431px) {
+  .navbar {
+    padding: 10px 20px;
+
+    > .nav-links {
+      display: none;
+    }
+
+    > button {
+      display: block;
+      font-size: 30px;
+      color: $main-color-dem;
+    }
+  }
+
+  .hero {
+    overflow: hidden;
+
+    > main {
+      top: 3rem;
+      gap: 5rem;
+      > .hero-text {
+        > .heading {
+          > h1 {
+            font-size: 45px;
+          }
+        }
+        > .paraFirst,
+        .paraSecond {
+          font-size: 10px;
+        }
+      }
+
+      > img {
+        width: 80%;
+      }
+    }
+
+    .hero-btns {
+      width: 95%;
+
+      > a > .work-btns {
+        width: 7rem;
+        font-size: 10px;
+      }
+    }
+
+    .stats {
+      > div {
+        padding: 10px;
+
+        > h3,
+        span {
+          font-size: 25px;
+        }
+        > p {
+          font-size: 11px;
+        }
+      }
+    }
+  }
+
+  .threeDAnimations {
+    .heroSec {
+      margin-bottom: 3rem;
+
+      > .text-container {
+        left: 0;
+        width: 100%;
+        padding: 0.5rem;
+        border-radius: 5px;
+        .description-text {
+          font-size: 13px;
+        }
+      }
+
+      > a > svg {
+        left: 16rem;
+      }
+    }
+
+    .wrapper {
+      @include flexColumn;
+      gap: 1rem;
+
+      .video-container {
+        width: 90%;
+
+        // .videoElement.big-video {
+        //   // height: 118px;
+        // }
+
+        .content {
+          padding-bottom: 2rem;
+
+          > .projects {
+            padding: 5px 10px;
+            font-size: smaller;
+          }
+        }
+      }
+    }
+  }
+
+  .threeDRenders {
+    > a > svg {
+      left: 16rem;
+      font-size: 3rem;
+    }
+
+    > .grid-wrapper {
+      // padding-top: rem;
+      @include flexColumn;
+    }
+
+    .overlay > .clicked-image {
+      width: 100%;
+      height: unset;
+    }
+  }
+
+  .services {
+    .services-heading-description > p {
+      width: 100%;
+    }
+
+    > .services-cards {
+      @include flexColumn;
+    }
+  }
+
+  .about {
+    flex-direction: column;
+    gap: 2rem;
+    padding: 5rem 1rem 5rem 1rem;
+
+    > div {
+      > h1 {
+        text-align: center;
+        font-size: 30px;
+      }
+      > .para {
+        > .para1,
+        .para2 {
+          font-size: 12px;
+          width: 100%;
+        }
+      }
+
+      > button {
+        width: 10rem;
+        padding: 10px 25px;
+        font-size: 13px;
+      }
+    }
+
+    > img {
+      height: 70%;
+    }
+  }
+
+  .contact-section-page {
+    .contact-us {
+      padding: 3rem 1rem 0 1rem;
+      // height: 100vh;
+      gap: 1rem;
+
+      .heading-description {
+        padding: 0 1rem 1rem 1rem;
+        > h1 {
+          text-align: center;
+        }
+        > p {
+          width: 100%;
+        }
+      }
+
+      > form {
+        gap: 3rem;
+      }
+    }
+
+    .checkout-work {
+      text-align: center;
+      > p {
+        > a {
+          color: $about-text;
+        }
+      }
+    }
+  }
+
+  .footer {
+    padding: 2rem 1.75rem;
+    height: 145vh;
+
+    .footer-div {
+      @include flexColumnCenter;
+      gap: 1.25rem;
+
+      > .self-details,
+      .information,
+      .useful-links,
+      .subscribe-us {
+        // width: 50%;
+        gap: 0.5rem;
+        // align-items: center;
+      }
+
+      > .self-details {
+        > div {
+          .little-big-para {
+            width: 50%;
+          }
+        }
+      }
+    }
+
+    > .social-media-links {
+      @include flexColumnCenter;
+      gap: 4rem;
+    }
+  }
+}
+
+@media screen and (max-width: 415px) {
+  .hero {
+    > main {
+      gap: 4rem;
+
+      > img {
+        width: 80%;
+      }
+    }
+  }
+
+  .testimonials {
+    height: unset;
+    padding-top: 5rem;
+  }
+
+  .threeDAnimations {
+    .heroSec {
+      > .text-container {
+        top: 40rem;
+        .description-text {
+          font-size: 12px;
+        }
+      }
+
+      > a > svg {
+        left: 15rem;
+      }
+    }
+  }
+
+  .threeDRenders {
+    > a > svg {
+      left: 15rem;
+    }
+  }
+
+  .contact-section-page {
+    .contact-us {
+      gap: 0;
+      .heading-description {
+        padding: 0 0 1rem 0;
+        > h1 {
+          font-size: 2rem;
+        }
+      }
+
+      > form {
+        padding: 1rem 0;
+      }
+    }
+  }
+
+  .footer {
+    height: 110vh;
+
+    > .social-media-links {
+      gap: 2rem;
+    }
+  }
+}
+
+// Iphone 12 pro
+@media screen and (max-width: 391px) {
+  .hero {
+    > main {
+      > img {
+        width: 60%;
+      }
+    }
+    .hero-btns > a > .work-btns-1,
+    .work-btns-2 {
+      width: 7.5rem;
+      font-size: 10px;
+    }
+  }
+
+  .threeDAnimations {
+    .heroSec {
+      > .text-container {
+        display: none;
+      }
+
+      > a > svg {
+        left: 14rem;
+      }
+    }
+  }
+
+  .threeDRenders {
+    > a > svg {
+      left: 14rem;
+    }
+  }
+}
+
+@media screen and (max-width: 376px) {
+  .hero > main > img {
+    width: 70%;
+  }
+
+  .contact-section-page {
+    gap: 0;
+    .contact-us {
+      gap: 0;
+      .heading-description {
+        padding: 0 0 1rem 0;
+        > h1 {
+          font-size: 2rem;
+        }
+      }
+
+      > form {
+        gap: 0.5rem;
+        padding: 1rem 0;
+      }
+    }
+  }
+
+  .footer {
+    height: 131vh;
+  }
+}

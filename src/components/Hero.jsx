@@ -1,92 +1,77 @@
 import React, { useRef } from "react";
 import heroImg from "../assets/Hero.png";
 import { Link } from "react-router-dom";
-import { animate, motion } from "framer-motion";
+import CountUp from "react-countup";
+import Testimonials from "./Testimonials";
 
 const Hero = () => {
-  const projectsCount = useRef(null);
-  const interprojectsCount = useRef(null);
-  const reviewCount = useRef(null);
-
-  // Animation of counting the Projects value
-  const animationProjectsCount = () => {
-    animate(0, 50, {
-      duration: 3,
-      onUpdate: (val) => (projectsCount.current.textContent = val.toFixed()),
-    });
-  };
-
-  const InternationalProjectsCount = () => {
-    animate(0, 10, {
-      duration: 3,
-      onUpdate: (val) =>
-        (interprojectsCount.current.textContent = val.toFixed()),
-    });
-  };
-
-  const fiverrReview = () => {
-    animate(0, 5, {
-      duration: 3,
-      onUpdate: (val) =>
-        (reviewCount.current.textContent = val.toFixed()),
-    });
-  };
 
   return (
-    <div className="hero">
-      <main>
-        <div className="hero-text">
-          <h1>3D VISUALIZER</h1>
-          <p>
-            "Crafting Tomorrow's Landscapes Today": Welcome to my world of 3D
-            wonders, where I craft your visions into reality through the art of
-            visualization.
-          </p>
-        </div>
-        <img src={heroImg} alt="Animated Hero" />
-      </main>
+    <>
+      <div className="hero" id="home">
+        <main>
+          <div className="hero-text">
+            <div className="heading">
+              <h1>3D VISUALIZER</h1>
+            </div>
 
-      <div className="hero-btns">
-        <Link to={"/3d-animaitons"}>
-          <button className="work-btns">3D Animations</button>
-        </Link>
-        <Link to={"/3d-renders"}>
-          <button className="work-btns">3D Renders</button>
-        </Link>
-      </div>
+            <p className="paraFirst">
+              "Crafting Tomorrow's Landscapes Today": Welcome to my world of 3D
+              wonders,
+            </p>
+            <p className="paraSecond">
+              where I craft your visions into reality through the art of
+              visualization.
+            </p>
+          </div>
 
-      <div className="stats">
-        <div>
-          <h3>
-            <motion.span
-              whileInView={animationProjectsCount}
-              ref={projectsCount}
-            ></motion.span>
-            +
-          </h3>
-          <p>Projects Completed</p>
+          <img src={heroImg} alt="Animated Hero" />
+        </main>
+
+        {/* Two Buttons of Hero Sections */}
+        <div className="hero-btns">
+          <Link to="/3d-animations">
+            <button className="work-btns-1">3D Animations</button>
+          </Link>
+
+          <Link to={"/3d-renders"}>
+            <button className="work-btns-2">3D Renders</button>
+          </Link>
         </div>
-        <div>
-          <h3>
-            <motion.span
-              whileInView={InternationalProjectsCount}
-              ref={interprojectsCount}
-            ></motion.span>
-            +
-          </h3>
-          <p>International Projects </p>
-        </div>
-        <div>
-          <h3>
-            <motion.span
-              whileInView={fiverrReview}
-              ref={reviewCount}
-            ></motion.span>
-          </h3>
-          <p>Star Reviews on Fiverr</p>
+
+        <div className="stats">
+          <div className="stats-div-1">
+            <h3>
+              <span>
+                <CountUp start={0} end={50} duration={5} delay={2} />
+              </span>
+              +
+            </h3>
+            <p>Projects Completed</p>
+          </div>
+
+          <div className="stats-div-2">
+            <h3>
+              <span>
+                <CountUp start={0} end={10} duration={5} delay={2} />
+              </span>
+              +
+            </h3>
+            <p>International Projects </p>
+          </div>
+
+          <div className="stats-div-3">
+            <h3>
+              <span>
+                <CountUp start={0} end={5} duration={5} delay={2} />
+              </span>
+            </h3>
+            <p>Star Reviews on Fiverr</p>
+          </div>
         </div>
       </div>
-    </div>
+      <Testimonials />
+    </>
   );
 };
 

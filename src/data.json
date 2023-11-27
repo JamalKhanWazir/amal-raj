@@ -1,0 +1,40 @@
+{
+  "services": [
+    {
+      "id": 1,
+      "name": "3D Animations",
+      "description": "Step into a world of boundless creativity with our captivating 3D animation service.",
+      "image": "icons/3d-animations.png"
+    },
+    {
+      "id": 2,
+      "name": "3D Renders",
+      "description": "creating lifelike visualizations that transform concepts into stunning, photorealistic images.",
+      "image": "icons/3d-renders.png"
+    },
+    {
+      "id": 3,
+      "name": "2D Plan Layout",
+      "description": "Specializing in personalized 2D floor plans designed to meet your specific need.",
+      "image": "icons/2d-plan.jpg"
+    },
+    {
+      "id": 4,
+      "name": "3D Elevation",
+      "description": "Whether it's a contemporary masterpiece or unique blend of styles my 3D models capture the essence of your design preferences.",
+      "image": "icons/3d-elevation.png"
+    },
+    {
+      "id": 5,
+      "name": "Furniture Layout",
+      "description": "Elevating interiors with bespoke 3D furniture layouts that strike the perfect balance.",
+      "image": "icons/furniture-layout.png"
+    },
+    {
+      "id": 6,
+      "name": "Interior design Consultation",
+      "description": "I offer personalized guidance and expertise to curate spaces that reflect your style and functionality needs.",
+      "image": "icons/interior-design.png"
+    }
+  ]
+}

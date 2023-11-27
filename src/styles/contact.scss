@@ -1,0 +1,138 @@
+.contact-section-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  height: 100vh;
+
+  .contact-us {
+    width: 100%;
+    background-color: $main-color-dem;
+    display: flex;
+    justify-content: space-around;
+
+    .heading-description {
+      width: 45%;
+      @include flexColumn;
+      gap: 40px;
+      z-index: 1;
+      padding: 10rem 1rem 1rem 5rem;
+      border-radius: 10px 0 0 10px;
+
+      > h1 {
+        color: $site-main-color2;
+        font-family: $roboto-slab, sans-serif;
+        font-size: 3.75rem;
+        animation: aboutHeading 1s ease-in-out normal;
+      }
+
+      > p {
+        color: $about-text;
+        font-family: $roboto-slab, sans-serif;
+        width: 85%;
+        letter-spacing: 2px;
+        word-spacing: 12px;
+        line-height: 25px;
+        animation: twoPara 2s ease-in-out normal;
+      }
+    }
+
+    > form {
+      width: 50%;
+      height: 100%;
+      @include flexColumn;
+      justify-content: start;
+      gap: 2.5rem;
+      padding: 10rem 5rem 1rem 3rem;
+      animation: amalRajImage 3.5s ease-in-out normal;
+      z-index: 1;
+      border-radius: 0 10px 10px 0;
+
+      ::placeholder {
+        color: lightgray;
+      }
+
+      label {
+        display: block;
+        color: $white;
+        margin-bottom: 10px;
+        color: $black;
+      }
+
+      > .name-email {
+        width: 100%;
+        display: flex;
+        gap: 10px;
+
+        .user-email,
+        .user-name {
+          width: 100%;
+        }
+
+        input {
+          width: 100%;
+          padding: 10px 5px;
+          font-size: medium;
+          border-radius: 5px;
+          border: 1px solid $black;
+        }
+      }
+
+      textarea {
+        width: 100%;
+        padding: 10px 5px;
+        font-size: medium;
+        border-radius: 5px;
+        border: 1px solid $black;
+      }
+
+      .submit-btn {
+        width: 25%;
+        padding: 15px 20px;
+        font: 400 15px "Roboto";
+        transition: 0.6s;
+        border: none;
+        border-radius: 5px;
+        background-color: $black;
+        color: white;
+
+        &:hover {
+          background-color: $white;
+          color: $black;
+          transition: 0.6s;
+        }
+      }
+    }
+  }
+
+  .checkout-work {
+    position: relative;
+
+    > p {
+      font-size: 20px;
+      color: $about-text;
+
+      > a {
+        color: $black;
+        font-weight: bolder;
+        &:hover {
+          color: $white;
+        }
+      }
+    }
+    
+  }
+
+  &::before {
+    // padding-top: 10rem;
+    left: 0;
+    right: 0;
+    content: "";
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    background: no-repeat center/auto url("../assets/contact-bg-image.png");
+    background-size: cover;
+    // animation: backgroundImage 1s;
+  }
+}

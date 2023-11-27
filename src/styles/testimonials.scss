@@ -1,0 +1,25 @@
+.testimonials {
+  width: 100%;
+  height: 120vh;
+  background-color: $site-main-color;
+  padding: 8rem 0 1rem;
+
+  > .title-line {
+    @include flexColumn;
+    align-items: center;
+    > h1 {
+      padding-bottom: 1rem;
+      color: $about-text;
+      // border-bottom: 2px solid $about-text;
+      animation: testimonialHeading 1s ease-in-out normal;
+    }
+
+    > .line {
+      height: 0.25rem;
+      width: 15rem;
+      background-color: $about-text;
+      border-radius: 20px;
+      animation: testimonialBreakline 1s ease-in-out normal;
+    }
+  }
+}

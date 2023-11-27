@@ -1,0 +1,109 @@
+// About and Contact Page Animations
+@keyframes aboutHeading {
+  from {
+    transform: translateY(-200px);
+    // opacity: 0;
+  }
+
+  to {
+    transform: translateY(0);
+    // opacity: 1;
+  }
+}
+
+@keyframes twoPara {
+  from {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0);
+    // opacity: 1;
+  }
+}
+
+@keyframes amalRajImage {
+  from {
+    transform: scale(0.7);
+    opacity: 0;
+  }
+
+  to {
+    transform: scale(1);
+    // opacity: 1;
+  }
+}
+
+// Hero Page Animations
+@keyframes heroPagePara {
+  from {
+    transform: translateX(150px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateX(0);
+    // opacity: 1;
+  }
+}
+
+// Hero image
+@keyframes heroImage {
+  from {
+    transform: scale(1.5);
+    //   opacity: ;
+  }
+
+  to {
+    transform: scale(1);
+    // opacity: 1;
+  }
+}
+
+//   Hero buttons
+@keyframes workButtons {
+  from {
+    transform: translateY(-200px);
+    // transform: translateX(200px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0);
+    // opacity: 1;
+  }
+}
+
+@keyframes testimonialHeading {
+  from {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+
+  to {
+    transform: scale(1);
+  }
+}
+
+@keyframes testimonialBreakline {
+  from {
+    transform: translateX(-200px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes goto {
+  from {
+    transform: translateY(0.25rem);
+  }
+
+  to {
+    transform: translateY(0);
+  }
+  
+}

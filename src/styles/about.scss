@@ -1,0 +1,61 @@
+.about {
+  height: 100vh;
+  background-color: $black;
+  padding: 10rem;
+  display: flex;
+  justify-content: space-around;
+
+  > div {
+    @include flexColumn;
+    gap: 30px;
+    > h1 {
+      color: $white;
+      font-family: $roboto-slab, sans-serif;
+      font-size: 50px;
+      animation: aboutHeading 1s ease-in-out normal;
+    }
+    > .para {
+      gap: 15px;
+      @include flexColumn;
+      > .para1,
+      .para2 {
+        color: $about-text;
+        font-family: $roboto-slab, sans-serif;
+        width: 75%;
+        letter-spacing: 2px;
+        word-spacing: 12px;
+        animation: twoPara 2s ease-in-out normal;
+      }
+
+      > .para2 {
+        animation: twoPara 2.5s ease-in-out normal;
+      }
+    }
+
+    > a > button {
+      width: 12rem;
+      padding: 15px 35px;
+      border-radius: 10px;
+      border: solid 3px $about-text;
+      color: $about-text;
+      background-color: $site-main-color;
+      transition: all 0.3s;
+      font: 700 15px "Roboto";
+      //   color: red;
+      cursor: pointer;
+      animation: twoPara 2.9s ease-in-out normal;
+
+      &:hover {
+        background-color: $about-text;
+        color: $site-main-color;
+      }
+    }
+  }
+
+  > img {
+    border-radius: 20px;
+    height: 100%;
+    animation: amalRajImage 3.5s ease-in-out normal;
+  }
+}
+

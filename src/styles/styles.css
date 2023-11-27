@@ -1,0 +1,160 @@
+/* Swipper started */
+.swiper {
+  width: 100%;
+  padding-top: 80px;
+  padding-bottom: 120px;
+
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 350px;
+  height: 350px;
+}
+
+.slider-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: end;
+  gap: 3rem;
+  background-color: #eee5c8;
+  border-radius: 10px;
+  height: 100%;
+  padding-bottom: 3rem;
+}
+
+.image-div {
+  position: absolute;
+  top: -57px;
+  background-color: #182532;
+  width: 115px;
+  height: 115px;
+  border-radius: 50%;
+
+  /* z-index: 1; */
+}
+
+.client-image {
+  position: absolute;
+  top: -50px;
+  /* display: absolute; */
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  /* z-index: 2; */
+}
+
+/* -------------- Dobule Quotes  Started ------------ */
+.svg-left {
+  position: absolute;
+  font-size: 20px;
+  color: #f06b4c;
+  top: 120px;
+  left: 10px;
+}
+
+.svg-right {
+  position: absolute;
+  color: #f06b4c;
+  font-size: 20px;
+  bottom: 122px;
+  right: 118px;
+}
+
+.svg-left.susan {
+  top: 90px;
+  left: 10px;
+}
+
+.svg-right.susan {
+  bottom: 123px;
+  right: 65px;
+}
+
+.svg-left.maca {
+  top: 105px;
+  left: 10px;
+}
+
+.svg-right.maca {
+  bottom: 123px;
+  right: 183px;
+}
+
+.svg-left.usman {
+  top: 105px;
+  left: 10px;
+}
+
+.svg-right.usman {
+  bottom: 123px;
+  right: 50px;
+}
+
+.svg-left.variod {
+  top: 90px;
+  left: 10px;
+}
+
+.svg-right.variod {
+  bottom: 123px;
+  right: 80px;
+}
+
+.svg-left.bellboss {
+  top: 120px;
+  left: 10px;
+}
+
+.svg-right.bellboss {
+  bottom: 123px;
+  right: 37px;
+}
+
+.svg-left.durga {
+  top: 105px;
+  left: 10px;
+}
+
+.svg-right.durga {
+  bottom: 123px;
+  right: 224px;
+}
+
+.svg-left.nithin {
+  top: 90px;
+  left: 10px;
+}
+
+.svg-right.nithin {
+  bottom: 123px;
+  right: 192px;
+}
+
+
+
+
+/* -------------- Dobule Quotes  Ends ------------ */
+
+
+.client-comment {
+  width: 80%;
+  font: 400 13px "Roboto";
+  color: black;
+  line-height: 1.3;
+}
+
+
+.name-flag {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.flag {
+  width: 35px;
+  height: 35px;
+}

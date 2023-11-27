@@ -1,37 +1,85 @@
-
 .navbar {
-    width: 100%;
-    // height: 50px;
-    @include flexRowCenter;
-    justify-content: space-between;
+  width: 100%;
+  // height: 50px;
+  @include flexRowCenter;
+  justify-content: space-between;
+  background-color: transparent;
+  // color: $main-color-dem;
+  padding: 20px 20px 20px 80px;
+  position: fixed;
+  top: 0;
+  z-index: 10;
+  transition: all 0.5s;
+
+  > a > h1 {
+    // font-size: 40rem;
+    color: $main-color-dem;
+    text-transform: uppercase;
+    font-size: large;
+    letter-spacing: 4px;
+    transition: all 0.3s;
+    &:hover {
+      color: $main-color-light;
+    }
+  }
+
+  > .nav-links {
+    display: flex;
+    gap: 30px;
+    > a {
+      color: $main-color-dem;
+      transition: all 0.3s;
+      &:hover {
+        color: $main-color-light;
+      }
+    }
+    .active {
+      color: $main-color-light;
+    }
+  }
+
+  > button {
+    border: none;
     background-color: transparent;
-    // color: $main-color-dem;
-    padding: 20px 20px 50px 80px;
-    position: fixed;
-    top: 0;
-    z-index: 10;
+    // color: $color6;
+    font-size: 1.5rem;
+    display: none;
+    // &:hover {
+    //   // color: $color3;
+    // }
+  }
+}
 
-    > a > h1 {
-        // font-size: 40rem;
-        color: $main-color-dem;
-        text-transform: uppercase;
-        font-size: large;
-        transition: all 0.3s;
-        &:hover {
-            color: $main-color-light;
-        }
+.bg-color {
+  background-color: $main-color-dem1;
+  transition: all 0.5s;
+}
+
+.navPhone {
+  transition: all 0.5s;
+  transform: translateX(200%); //by defualt it wil be at the top
+  @include flexColumnCenter;
+  width: 100%;
+  height: 100vh;
+  background-color: $site-main-color;
+  position: fixed;
+  top: 9%;
+  right: 0%;
+  z-index: 100;
+  gap: 3rem;
+
+  > .nav-links {
+    @include flexColumnCenter;
+    gap: 30px;
+
+    > a {
+      color: $about-text;
+      font-size: 25px;
     }
+  }
 
-    > .nav-links {
-        display: flex;
-        gap: 30px;
-        > a {
-            color: $main-color-dem;
-            transition: all 0.3s;
-            &:hover {
-                color: $main-color-light;
-            }
-        }
+}
 
-    }
+.navPhoneComes {
+  transform: translateX(0);
 }

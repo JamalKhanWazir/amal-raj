@@ -1,0 +1,91 @@
+.threeDRenders {
+  background-color: $about-text;
+
+  > .renders-bg-image {
+    object-fit: cover;
+    width: 100%;
+    height: 100vh;
+  }
+
+  > .grid-wrapper {
+    padding: 5rem 1rem 1rem 1rem ;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    // Repeat every two rows the first one with area of 30rem and 2nd 50rem
+    // Means 12 rows will be divided by size and this will be appied on it
+    // First row 30rem 2nd row 50rem and so on upto 12 rows cause we have 18
+    // images which is divided in 12 rows 2 per row which becomes 12 images
+    // and 6 images per row which becomes totally 18
+    grid-template-rows: repeat(2, 30rem 50rem);
+    gap: 1rem;
+    // padding-top: 5rem;
+
+    > .render-image {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      cursor: pointer;
+      transition: all 0.3s;
+
+      &:hover {
+        transform: scale(1.02);
+        opacity: 0.9;
+      }
+    }
+
+    > .render-image.big-image {
+      grid-column: 1 / span 2;
+    }
+  }
+
+  .overlay {
+    position: fixed;
+    background-color: $about-text;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    @include flexRowCenter;
+    z-index: 15;
+
+    > svg {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      font-size: 3rem;
+      color: $site-main-color;
+      transition: all 0.3s;
+      cursor: pointer;
+
+      &:hover {
+        background-color: $site-main-color;
+        color: $white;
+        transition: all 0.3s;
+      }
+    }
+
+    > .clicked-image {
+      object-fit: cover;
+      width: 80%;
+      height: 100%;
+      z-index: 16;
+    }
+  }
+
+  > a > svg {
+    position: absolute;
+    color: $site-main-color;
+    bottom: 1.5rem;
+    left: 50rem;
+    font-size: 4.5rem;
+    font-weight: 100;
+    transform: translateX(-100%);
+    animation: arrowUp 0.7s infinite linear alternate;
+  }
+}
+
+@keyframes arrowUp {
+  to {
+    transform: translate(-100%, -30%);
+  }
+}

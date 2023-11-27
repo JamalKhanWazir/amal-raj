@@ -1,0 +1,116 @@
+.threeDAnimations {
+  background-color: $site-main-color;
+  // padding-bottom: 2rem;
+
+  .heroSec {
+    width: 100%;
+    height: 100vh;
+    margin-bottom: 5rem;
+
+    .backgroundVideo {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    > .text-container {
+      position: absolute;
+      top: 20rem;
+      left: 25rem;
+      background-color: rgba(0, 0, 0, 0.7);
+      width: 51%;
+      padding: 2rem;
+      border-radius: 20px;
+      // overflow: hidden;
+      // display: flex;
+
+      .description-text {
+        margin-right: 5px;
+        color: $white;
+        // font: 900 3rem $about-text;
+        font-size: x-large;
+        // font-weight: 900;
+        font-family: $timesRomanSimple;
+        width: fit-content;
+        display: inline;
+      }
+    }
+
+    > a > svg {
+      position: absolute;
+      color: $about-text;
+      bottom: 1.5rem;
+      left: 50rem;
+      font-size: 4.5rem;
+      font-weight: lighter;
+      transform: translateX(-100%);
+      animation: arrowUp 0.7s infinite linear alternate;
+    }
+  }
+
+  @keyframes arrowUp {
+    to {
+      transform: translate(-100%, -30%);
+    }
+  }
+
+  .wrapper {
+    width: 100%;
+    padding-bottom: 2rem;
+    @include flexRowCenter;
+    flex-wrap: wrap;
+    gap: 5rem;
+    padding-top: 4rem;
+
+    .video-container {
+      width: 40%;
+      position: relative;
+
+      .videoElement {
+        width: 100%;
+        border-radius: 20px;
+        // box-shadow: 0 0 10px white;
+      }
+
+      .videoElement.big-video {
+        object-fit: cover;
+        width: 100%;
+        height: 350px;
+      }
+
+      .content {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: rgba(0, 0, 0, 0.6);
+        opacity: 0;
+        border-radius: 20px;
+        @include flexColumnCenter;
+        justify-content: end;
+        padding-bottom: 4rem;
+        transition: 0.4s;
+
+        &:hover {
+          opacity: 1;
+          box-shadow: 0 0 10px white;
+        }
+
+        > .projects {
+          background-color: transparent;
+          color: $about-text;
+          border: 1px solid $about-text;
+          padding: 10px 15px;
+          border-radius: 10px;
+          transition: 0.5s;
+
+          &:hover {
+            background-color: $about-text;
+            color: $black;
+          }
+        }
+      }
+    }
+  }
+}
