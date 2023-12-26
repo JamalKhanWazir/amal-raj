@@ -15,7 +15,7 @@ const Footer = () => {
         <div className="self-details">
           <div>
             <h2>Amal Raj</h2>
-            <p>“Crafting Tomorrow’s Landscapes Today”</p>
+            <p>“Crafting Tomorrow's Landscapes Today”</p>
           </div>
 
           <div>
@@ -37,7 +37,7 @@ const Footer = () => {
         <div className="information">
           <h3>Gallery</h3>
           <div className="footer-links">
-            <NavLink to={"/3d-animations"} scrollToTop>
+            <NavLink to={"/3d-animations"} >
               <p>3D Animations</p>
             </NavLink>
             <NavLink to={"/3d-renders"}>

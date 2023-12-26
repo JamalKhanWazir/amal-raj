@@ -428,6 +428,11 @@
     }
   }
 
+  .testimonials {
+    position: relative;
+    z-index: 5;
+  }
+
   .threeDAnimations {
     .heroSec {
       margin-bottom: 3rem;
@@ -656,16 +661,21 @@
 // Iphone 12 pro
 @media screen and (max-width: 391px) {
   .hero {
+
+    .hero-btns {
+      width: 98%;
+    }
     > main {
       > img {
-        width: 60%;
+        width: 70%;
       }
     }
-    .hero-btns > a > .work-btns-1,
-    .work-btns-2 {
-      width: 7.5rem;
-      font-size: 10px;
-    }
+
+    // .hero-btns > a > .work-btns-1,
+    // .work-btns-2 {
+    //   // width: 8.5rem;
+    //   // font-size: 10px;
+    // }
   }
 
   .threeDAnimations {
